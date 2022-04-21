@@ -1,19 +1,26 @@
 package hello.coreself.order.service;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import hello.coreself.AppConfig;
 import hello.coreself.member.Grade;
 import hello.coreself.member.Member;
 import hello.coreself.member.service.MemberService;
 import hello.coreself.member.service.MemberServiceImpl;
 import hello.coreself.order.Order;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class OrderServiceTest {
-    OrderService orderService = new OrderServiceImpl();
-    MemberService memberService = new MemberServiceImpl();
+    AppConfig appConfig = new AppConfig();
+    OrderService orderService;
+    MemberService memberService;
+
+    @BeforeEach
+    void beforeEach() {
+        orderService = appConfig.orderService();
+        memberService = appConfig.memberService();
+    }
     @Test
     @DisplayName("VIP일때 주문")
     void order_vip() {
