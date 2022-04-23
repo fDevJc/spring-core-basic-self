@@ -4,9 +4,7 @@ import hello.coreself.AppConfig;
 import hello.coreself.member.Grade;
 import hello.coreself.member.Member;
 import hello.coreself.member.service.MemberService;
-import hello.coreself.member.service.MemberServiceImpl;
 import hello.coreself.order.service.OrderService;
-import hello.coreself.order.service.OrderServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

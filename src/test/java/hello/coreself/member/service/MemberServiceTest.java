@@ -1,6 +1,5 @@
 package hello.coreself.member.service;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 import hello.coreself.AppConfig;
 import hello.coreself.member.Grade;

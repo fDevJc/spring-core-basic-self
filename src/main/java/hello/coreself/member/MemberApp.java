@@ -2,7 +2,6 @@ package hello.coreself.member;
 
 import hello.coreself.AppConfig;
 import hello.coreself.member.service.MemberService;
-import hello.coreself.member.service.MemberServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
